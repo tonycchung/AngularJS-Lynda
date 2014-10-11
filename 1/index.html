@@ -1,9 +1,10 @@
 <!doctype html>
-<html lang="en" ng-app>
+<html lang="en" ng-app="myApp">
 <head>
   <meta charset="UTF-8">
   <title>Angular Demo</title>
   <script src="bower_components/angular/angular.js"></script>
+  <script src="js/controllers.js"></script>
 </head>
 <body>
 
@@ -12,16 +13,5 @@
   <p>{{ author.title + ', ' + author.company }}</p>
 </div>
 
-<script>
-
-function MyController($scope) {
-  $scope.author = {
-    'name' : 'Tony Chung',
-    'title' : 'Web Dev',
-    'company' : 'N/A'
-  }
-}
-  
-</script>
 </body>
 </html>
