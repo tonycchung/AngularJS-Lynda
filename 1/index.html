@@ -6,7 +6,22 @@
   <script src="bower_components/angular/angular.js"></script>
 </head>
 <body>
-  <input type="text" ng-model="name">
-  <h2>Welcome {{name}}</h2>
+
+<div ng-controller = "MyController">
+  <h1>{{author.name}}</h1>
+  <p>{{ author.title + ', ' + author.company }}</p>
+</div>
+
+<script>
+
+function MyController($scope) {
+  %scope.author = {
+    'name' : 'Tony Chung',
+    'title' : 'Web Dev',
+    'company' : 'N/A'
+  }
+}
+  
+</script>
 </body>
 </html>
